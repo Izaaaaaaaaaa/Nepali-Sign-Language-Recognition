@@ -1,0 +1,67 @@
+# ==========================================
+# Nepali Sign Language Recognition Project
+# ==========================================
+
+# --- DATASET & FEATURES ---
+# Ignore the thousands of raw images and video frames
+data/
+datasets/
+
+# Ignore serialized feature vectors (NumPy arrays) 
+# These are generated from Script 2 and are too large for Git
+*.npy
+
+# --- MACHINE LEARNING MODELS ---
+# Ignore heavy model weights (YOLO and LSTM)
+# Users should download or train their own models
+models/*.pt
+models/*.h5
+models/*.keras
+
+# Ignore YOLOv8 training logs, checkpoints, and result plots
+runs/
+
+# --- PYTHON & VIRTUAL ENVIRONMENTS ---
+# Ignore the local virtual environment
+venv/
+.venv/
+env/
+bin/
+lib/
+develop-eggs/
+dist/
+eggs/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+
+# Ignore Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- LOGGING & MONITORING ---
+# Ignore TensorBoard logs
+logs/
+*.log
+
+# --- IDE & SYSTEM SPECIFIC ---
+# VS Code settings and workspace
+.vscode/
+.history/
+
+# PyCharm / IntelliJ settings
+.idea/
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+desktop.ini
+
+# --- CONFIGURATION (OPTIONAL) ---
+# If you use environment variables for keys or paths, ignore the .env file
+.env
