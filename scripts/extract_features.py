@@ -6,11 +6,10 @@ from ultralytics import YOLO
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(SCRIPT_DIR)
 DATA_PATH = os.path.join(ROOT_DIR, 'data', 'sequences')
-YOLO_MODEL = os.path.join(ROOT_DIR, 'models', 'yolov8_hand.pt')
+YOLO_PATH = os.path.join(ROOT_DIR, 'models', 'yolov8_hand.pt')
 
-model = YOLO(YOLO_MODEL)
-actions = np.array(['Namaskar', 'Mero', 'Naam', 'Malai', 'Bhok', 'Lagyo', 'Timro', 'Naam', 'K', 'Ho', 
-                   'Timi', 'Kati', 'Barsa', 'Malai', 'Gadit', 'Mann', 'Parcha', 'Chiya', 'Khana', 'Jaam', 'Bajey', 'Aunu', 'Bhayo'])
+model = YOLO(YOLO_PATH)
+actions = np.array(['Naam']) # DOWNSCALED
 
 for action in actions:
     for seq in range(30):
@@ -25,4 +24,3 @@ for action in actions:
                     if i < 2: feat[i] = box[:5]
             video_data.append(feat.flatten())
         np.save(os.path.join(DATA_PATH, action, f"{seq}.npy"), np.array(video_data))
-    print(f"Features Extracted: {action}")
