@@ -13,7 +13,7 @@ label_map = {label:num for num, label in enumerate(actions)}
 
 sequences, labels = [], []
 for action in actions:
-    for seq in range(30):
+    for seq in range(5):
         p = os.path.join(DATA_PATH, action, f"{seq}.npy")
         if os.path.exists(p):
             sequences.append(np.load(p) / 640.0) 

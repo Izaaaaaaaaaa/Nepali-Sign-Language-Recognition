@@ -12,7 +12,7 @@ model = YOLO(YOLO_PATH)
 actions = np.array(['Naam']) # DOWNSCALED
 
 for action in actions:
-    for seq in range(30):
+    for seq in range(5):
         video_data = []
         for f_num in range(60):
             img = cv2.imread(os.path.join(DATA_PATH, action, str(seq), f"{f_num}.jpg"))
