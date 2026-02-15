@@ -14,7 +14,7 @@ runs/
 
 # AI Models and Weights
 models/*.pt
-models/*.h5
+models/*.keras
 yolov8n.pt
 
 # Python Cache
@@ -25,3 +25,5 @@ __pycache__/
 # IDE Settings
 .vscode/
 .idea/
+
+sentence/
