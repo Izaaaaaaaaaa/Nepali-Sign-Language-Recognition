@@ -7,7 +7,7 @@ model = YOLO(model_path)
 
 # 2. Pick an image from your hand_dataset (Choose one you know has a hand)
 # CHANGE THIS PATH to a real image on your computer
-img_test = r"D:\Nepali_SLR_Project\hand_dataset\train\images\1_jpg.rf.ac78869a9d720bc8f05ac2e3f87417be.jpg" 
+img_test = r"D:\Nepali_SLR_Project\data\sequences\naam\3\39.jpg" 
 
 if os.path.exists(img_test):
     results = model(img_test, conf=0.1)
