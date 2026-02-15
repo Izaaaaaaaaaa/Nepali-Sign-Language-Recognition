@@ -8,7 +8,7 @@ import tensorflow as tf
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(SCRIPT_DIR)
 YOLO_PATH = os.path.join(ROOT_DIR, 'models', 'yolov8_hand.pt')
-LSTM_PATH = os.path.join(ROOT_DIR, 'models', 'slr_lstm_model.h5')
+LSTM_PATH = os.path.join(ROOT_DIR, 'models', 'slr_lstm_model.keras')
 
 # 1. Load Trained Models
 model_yolo = YOLO(YOLO_PATH)
