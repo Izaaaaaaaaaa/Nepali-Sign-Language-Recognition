@@ -12,10 +12,6 @@ hand_dataset/
 runs/
 *.log
 
-# AI Models and Weights
-models/*.pt
-models/*.keras
-yolov8n.pt
 
 # Python Cache
 __pycache__/
@@ -26,4 +22,3 @@ __pycache__/
 .vscode/
 .idea/
 
-sentence/
