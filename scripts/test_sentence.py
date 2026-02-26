@@ -17,7 +17,7 @@ model_lstm = tf.keras.models.load_model(LSTM_PATH)
 
 actions = np.array(['Timro','Naam','K','ho']) # FULL SCALE
 
-subfolders = ['0', '1', '2', '3']
+subfolders = ['4', '5', '6', '7']
 final_sentence_list = []
 
 print(f"--- Sentence Construction Mode (Masked) ---")
